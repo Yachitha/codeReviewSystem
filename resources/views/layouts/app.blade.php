@@ -11,16 +11,25 @@
     <title>{{ config('app.name', 'Code Review System') }}</title>
 
     <!-- Scripts -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+     <!-- <script src="/ace-builds-master/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script> -->
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    
+   
+
 </head>
 <body>
+    
+
+
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
@@ -67,9 +76,52 @@
             </div>
         </nav>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
+
+       
+
+
+        
     </div>
+    <main class="py-4">
+           @yield('content')
+    </main>
+    <script type="text/javascript">
+        function langSelect() {
+            var lang= document.getElementById('langSelect');
+            getElementById
+
+        }
+    </script>
+     <script>
+                var res;
+                var cod;    
+            function langSelect() {
+                    var lang= document.getElementById('langSelect').value;
+                    //document.getElementById("demo").innerHTML = lang ;
+                    var str1 = "ace/mode/";
+                    res = str1.concat(lang);
+               
+
+                var e = ace.edit("editor");
+                e.setTheme("ace/theme/twilight");
+                e.session.setMode(res);
+                
+                
+                cod= e.getValue(); // or session.getValue
+                }
+
+            function submit() {
+
+                document.getElementById("result").innerHTML=cod ;
+            }
+
+            
+    </script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" type="text/javascript"></script> 
 </body>
 </html>
