@@ -7,7 +7,7 @@
 <div class="container" >
    
     <div class="row">
-        <div class="col-md-12" style="width: 800px">
+        <div class="col-md-12" style="width:80% ; position: absolute;">
         <div class="card" style="width: 100%;">
         <div class="card-header">
             <div class="form-group">
@@ -29,7 +29,7 @@
 //copy and paste your code here
             </pre>  
           </div>
-          <div style="padding-left: 20px; padding-right: 20px">
+          <div style="padding-left: 20px; padding-right: 20px; background-color:#000; opacity:0.95 ">
           <button type="submit" class="btn btn-primary mb-2" style="padding-right: 20px; padding-left: 20px" onclick="submit()" >Submit</button>
           </div>
           <div class="form-group" style="padding-right: 20px; padding-left: 20px">

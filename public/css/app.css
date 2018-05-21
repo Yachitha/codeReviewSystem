@@ -2395,6 +2395,8 @@ select.form-control-lg:not([size]):not([multiple]),
 
 .form-group {
   margin-bottom: 1rem;
+  background-color: #000;
+  opacity: 0.95;
 }
 
 .form-text {
@@ -3465,12 +3467,12 @@ fieldset:disabled a.btn {
   color: #343a40;
   background-color: transparent;
   background-image: none;
-  border-color: #343a40;
+  border-color: #5effab;
 }
 
 .btn-outline-dark:hover {
-  color: #fff;
-  background-color: #343a40;
+  color:#5effab;
+  background-color:#5effab;
   border-color: #343a40;
 }
 
@@ -3482,7 +3484,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-dark.disabled,
 .btn-outline-dark:disabled {
-  color: #343a40;
+  color: #5effab;
   background-color: transparent;
 }
 
@@ -5057,11 +5059,15 @@ input[type="button"].btn-block {
           flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #c0d8ca;
+  background-color: #000;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  border-width: 3px; 
+  border-color: #5effab;
+  color:  #5effab;
   width: 100%
+
 }
 
 .card > hr {
@@ -5084,10 +5090,12 @@ input[type="button"].btn-block {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   padding: 1.25rem;
+   background-color: #000;
 }
 
 .card-title {
   margin-bottom: 0.75rem;
+   background-color: #000;
 }
 
 .card-subtitle {
@@ -5110,12 +5118,14 @@ input[type="button"].btn-block {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
+
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .card-header:first-child {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+   background-color: #000;
 }
 
 .card-header + .list-group .list-group-item:first-child {
@@ -5124,7 +5134,7 @@ input[type="button"].btn-block {
 
 .card-footer {
   padding: 0.75rem 1.25rem;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(255, 255, 255, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
