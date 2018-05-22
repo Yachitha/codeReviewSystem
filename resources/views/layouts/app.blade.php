@@ -12,6 +12,7 @@
 
     <!-- Scripts -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.js"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
 
      <!-- <script src="/ace-builds-master/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script> -->
@@ -88,13 +89,13 @@
     <script type="text/javascript">
         function langSelect() {
             var lang= document.getElementById('langSelect');
-            getElementById
-
+            
         }
     </script>
      <script>
                 var res;
-                var cod;    
+                var cod; 
+                var e;   
             function langSelect() {
                     var lang= document.getElementById('langSelect').value;
                     //document.getElementById("demo").innerHTML = lang ;
@@ -102,16 +103,17 @@
                     res = str1.concat(lang);
                
 
-                var e = ace.edit("editor");
-                e.setTheme("ace/theme/twilight");
+                e = ace.edit("editor");
+                e.setTheme("ace/theme/vibrant_ink");
                 e.session.setMode(res);
                 
                 
-                cod= e.getValue(); // or session.getValue
+                 // or session.getValue
                 }
 
             function submit() {
-
+                
+                cod= e.getValue();
                 document.getElementById("result").innerHTML=cod ;
             }
 
